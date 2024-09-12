@@ -202,46 +202,71 @@ body {
 }
 
 
-.phase:nth-child(1) .phase-content h3 {
-    text-decoration: underline;
-    text-decoration-thickness: 6px;
-    text-decoration-color: #2B39F5;
+.phase-content .line {
+    width: 45px;
+    height: 3px;
+    /* background: linear-gradient(to right, #AD66F9, #EF9570); */
+    /* margin-right: 10px; */
+
+    position: absolute;
+    border-radius: 15px;
+    top: 50px;
+    bottom: 10px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+
+
+  .phase-content .line1 {
+    width: 45px;
+    height: 3px;
+    /* background: linear-gradient(to right, #AD66F9, #EF9570); */
+    /* margin-right: 10px; */
+
+    position: absolute;
+    border-radius: 15px;
+    top: 50px;
+    bottom: 10px;
+    right: 19.5rem;
+    animation: slideInLeft 1s ease-in-out;
+  }
+
+
+.phase:nth-child(1) .phase-content .line {
+    background: #2B39F5;
+
 }
 
-.phase:nth-child(2) .phase-content h3 {
-    text-decoration: underline;
-    text-decoration-thickness: 6px;
-    text-decoration-color: #013671;
+.phase:nth-child(2) .phase-content .line1 {
+
+    background: #013671;
 }
 
-.phase:nth-child(3) .phase-content h3 {
-    text-decoration: underline;
-    text-decoration-thickness: 6px;
-    text-decoration-color: #9D4DF1;
+.phase:nth-child(3) .phase-content .line {
+
+   background: #9D4DF1;
 }
 
-.phase:nth-child(4) .phase-content h3 {
-    text-decoration: underline;
-    text-decoration-thickness: 6px;
-    text-decoration-color: #7D93F0;
+.phase:nth-child(4) .phase-content .line1 {
+   
+    background: #7D93F0;
 }
 
-.phase:nth-child(5) .phase-content h3 {
-    text-decoration: underline;
-    text-decoration-thickness: 6px;
-    text-decoration-color: #0F65B2;
+.phase:nth-child(5) .phase-content .line {
+
+    background: #0F65B2;
+    
 }
 
-.phase:nth-child(6) .phase-content h3 {
-    text-decoration: underline;
-    text-decoration-color: #EF9570;
-    text-decoration-thickness: 6px;
+.phase:nth-child(6) .phase-content .line1 {
+
+    background: #EF9570;
+   
 }
 
-.phase:nth-child(7) .phase-content h3 {
-    text-decoration: underline;
-    text-decoration-thickness: 6px;
-    text-decoration-color: #F7447D;
+.phase:nth-child(7) .phase-content .line {
+
+    background: #F7447D;
+    
 }
 
 
