@@ -24,10 +24,23 @@ body {
 .roadmap h2 {
     margin-bottom: 40px;
     font-size: 36px;
-    color: #fff;
+    color: #EF9570;
     position: relative;
     display: inline-block;
 }
+
+.roadmap .line4 {
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, #AD66F9, #EF9570);
+    /* margin-right: 10px; */
+
+    position: absolute;
+    border-radius: 15px;
+    top: 95px;
+    left: 30rem;
+    animation: slideInLeft 1s ease-in-out;
+  }
 
 .timeline {
     position: relative;
@@ -139,6 +152,7 @@ body {
     border-left: 1px solid #EF9570;
     border-right: 1px solid #EF9570;
     border-bottom: 1px solid #41427E;
+    border-radius: 16px 4px 30px 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -147,6 +161,7 @@ body {
     border-left: 1px solid #EF9570;
     border-right: 1px solid #EF9570;
     border-bottom: 1px solid #41427E;
+    border-radius: 4px 16px 30px 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -155,6 +170,7 @@ body {
     border-left: 1px solid #EF9570;
     border-right: 1px solid #EF9570;
     border-bottom: 1px solid #41427E;
+    border-radius: 16px 4px 30px 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -163,6 +179,7 @@ body {
     border-left: 1px solid #EF9570;
     border-right: 1px solid #EF9570;
     border-bottom: 1px solid #41427E;
+    border-radius: 4px 16px 30px 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
 }
 
@@ -171,6 +188,7 @@ body {
     border-left: 1px solid #EF9570;
     border-right: 1px solid #EF9570;
     border-bottom: 1px solid #41427E;
+    border-radius: 16px 4px 30px 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -179,6 +197,7 @@ body {
     border-left: 1px solid #4892E3;
     border-right: 1px solid #4892E3;
     border-bottom: 1px solid #41427E;
+    border-radius: 4px 16px 30px 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -187,7 +206,8 @@ body {
     border-left: 1px solid #EF9570;
     border-right: 1px solid #EF9570;
     border-bottom: 1px solid #41427E;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);/
+    border-radius: 16px 4px 30px 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -311,6 +331,17 @@ body {
         transform: scale(1.1);
     }
 }
+
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
 
 
