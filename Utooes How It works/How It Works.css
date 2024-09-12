@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+   font-family: "Manrope", sans-serif;
+    background-color: #0d1b2a;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+  
+  .how-it-works {
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .header {
+    /* display: flex;
+    flex-direction: ;
+    align-items: center;
+    margin-bottom: 50px; */
+
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  .header .line {
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, #AD66F9, #EF9570);
+    /* margin-right: 10px; */
+
+    position: absolute;
+    border-radius: 15px;
+    top: 10px;
+    left: 2px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  .header h2 {
+    font-size: 24px;
+    color: #EF9570;
+
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .step {
+    position: relative;
+    flex-basis: 30%;
+    font-size: 18px;
+    padding: 20px;
+    background-color: #112240;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeInUp 1s ease-in-out;
+    display: flex;
+    align-items: center;
+  }
+  
+  .step-number {
+    font-size: 48px;
+    color: #ff6f61;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+  
+  .step h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .step[data-step="01"] .step-number {
+    color: #E74763;
+  }
+  
+  .step[data-step="02"] .step-number {
+    color: #E17B6F;
+  }
+  
+  .step[data-step="03"] .step-number {
+    color: #BD70B4;
+  }
+  
+  .step[data-step="04"] .step-number {
+    color: #71C18E;
+  }
+  
+  .step[data-step="05"] .step-number {
+    color: #37CDF2;
+  }
+  
+  .step[data-step="06"] .step-number {
+    color: #547BBC;
+  }
+  
+  .step[data-step="07"] .step-number {
+    color: #8999B2;
+  }
+  
+  .step[data-step="08"] .step-number {
+    color: #FFD28E;
+  }
+  
+  .step:hover {
+    transform: scale(1.05);
+    background-color: #30475e;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .steps-container {
+      flex-direction: column;
+    }
+    .step {
+      flex-basis: 100%;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
